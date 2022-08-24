@@ -1,0 +1,41 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.ndtk {
+  &-flex {
+    display: flex;
+  }
+  &-accordion {
+    width: 100%;
+    padding: 20px 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    &-content {
+      padding: 12px;
+      margin: 10px 0 8px 0;
+    }
+    &-header {
+      margin: 0;
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+  &-mat-icon {
+    &.key-up {
+      &:before {
+        font-family: "Material Icons";
+        font-size: 30px;
+        content: "\e313";
+      }
+    }
+    &.key-down {
+      &:before {
+        font-family: "Material Icons";
+        font-size: 30px;
+        content: "\e5ce";
+      }
+    }
+  }
+}
