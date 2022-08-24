@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:accordion-lib": "ng build --project ng-accordion-directive --configuration production",
+    "build:shell": "ng build --project shell --configuration production",
+    "build:prod": "npm run build:accordion-lib && npm run build:shell",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
